@@ -40,6 +40,7 @@
 <body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
 
     <header class="sticky top-0 z-[100]">
+
         <!-- Top bar -->
         <div class="bg-[#00BF8E] text-white py-2">
             <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -70,13 +71,14 @@
                 <a href="index.html" class="flex-shrink-0">
                     <img src="assets/images/logo-new.png" class="h-16 w-auto" alt="MCT Logo">
                 </a>
-                <button id="menuToggle" class="lg:hidden p-2 text-[#00BF8E] focus:outline-none">
+                <button id="menuToggle" class="lg:hidden p-2 text-[#00BF8E] focus:outline-none"
+                    aria-label="Toggle navigation">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
 
                 <ul id="navbarNav" class="hidden lg:flex items-center list-none m-0 p-0">
                     <li><a href="index.html"
-                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] whitespace-nowrap">Home</a>
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Home</a>
                     </li>
                     <li><a href="about.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">About</a>
@@ -84,6 +86,8 @@
                     <li><a href="academics.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Academics</a>
                     </li>
+
+                    <!-- Institution dropdown -->
                     <li class="relative group">
                         <a href="institution.html"
                             class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
@@ -99,6 +103,8 @@
                             </div>
                         </div>
                     </li>
+
+                    <!-- Committee dropdown -->
                     <li class="relative group">
                         <a href="committees.html"
                             class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
@@ -125,6 +131,7 @@
                             </div>
                         </div>
                     </li>
+
                     <li><a href="courses.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Courses</a>
                     </li>
@@ -132,12 +139,15 @@
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Faculties</a>
                     </li>
                     <li><a href="facilities.html"
-                            class="block px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Facilities</a>
+                            class="block px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] whitespace-nowrap">Facilities</a>
                     </li>
                     <li><a href="gallery.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Gallery</a>
                     </li>
-                    <li><a href="contact.html"
+                                        <li><a href="iqac.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">IQAC</a>
+                    </li>
+<li><a href="contact.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Contact</a>
                     </li>
                 </ul>
@@ -262,7 +272,10 @@
                         <li><a href="gallery.html"
                                 class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
                                     class="text-[#00BF8E] font-semibold">›</span>Gallery</a></li>
-                        <li><a href="contact.html"
+                                                <li><a href="iqac.html"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>IQAC</a></li>
+<li><a href="contact.html"
                                 class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
                                     class="text-[#00BF8E] font-semibold">›</span>Contact</a></li>
                     </ul>
@@ -275,6 +288,7 @@
                         <li><a href="academics.html"
                                 class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
                                     class="text-[#00BF8E] font-semibold">›</span>Academics</a></li>
+
                         <li><a href="committees.html"
                                 class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
                                     class="text-[#00BF8E] font-semibold">›</span>Committees</a></li>
@@ -291,16 +305,19 @@
                         class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">
                         Contact</h5>
                     <ul class="space-y-3.5">
-                        <li class="flex items-start gap-3 text-sm text-slate-500"><i
-                                class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i><span>Melmuri,
-                                Malappuram,<br>Kerala 676517, India</span></li>
-                        <li class="flex items-start gap-3 text-sm text-slate-500"><i
-                                class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i><a href="tel:+917994647474"
-                                class="hover:text-white">+91 7994647474</a></li>
-                        <li class="flex items-start gap-3 text-sm text-slate-500"><i
-                                class="fas fa-envelope text-[#00BF8E] mt-0.5 w-4"></i><a
-                                href="mailto:principalmctcls@gmail.com"
-                                class="hover:text-white">principalmctcls@gmail.com</a></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-500">
+                            <i class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i>
+                            <span>Melmuri, Malappuram,<br>Kerala 676517, India</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-500">
+                            <i class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i>
+                            <a href="tel:+917994647474" class="hover:text-white">+91 7994647474</a>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-500">
+                            <i class="fas fa-envelope text-[#00BF8E] mt-0.5 w-4"></i>
+                            <a href="mailto:principalmctcls@gmail.com"
+                                class="hover:text-white">principalmctcls@gmail.com</a>
+                        </li>
                     </ul>
                 </div>
             </div>

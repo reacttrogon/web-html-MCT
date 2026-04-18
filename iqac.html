@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="assets/images/mct-favicon.png">
-    <title>Institutional Recognition · M.C.T COLLEGE OF LEGAL STUDIES</title>
+    <title>IQAC · M.C.T COLLEGE OF LEGAL STUDIES</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -40,7 +40,6 @@
 
 <body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
 
-    <!-- ── HEADER ──────────────────────────────────────────────── -->
     <header class="sticky top-0 z-[100]">
 
         <!-- Top bar -->
@@ -92,7 +91,7 @@
                     <!-- Institution dropdown -->
                     <li class="relative group">
                         <a href="institution.html"
-                            class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] whitespace-nowrap">
+                            class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
                             Institution <i class="fas fa-chevron-down text-[9px]"></i>
                         </a>
                         <div
@@ -147,7 +146,7 @@
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Gallery</a>
                     </li>
                                         <li><a href="iqac.html"
-                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">IQAC</a>
+                            class="block px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] whitespace-nowrap">IQAC</a>
                     </li>
 <li><a href="contact.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Contact</a>
@@ -156,46 +155,108 @@
             </div>
         </nav>
     </header>
-
     <!-- ── PAGE HERO ─────────────────────────────────────────── -->
     <div style="background-color:#1a365d;" class="py-14">
         <div class="max-w-6xl mx-auto px-6">
             <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#00BF8E;">Institution</p>
-            <h1 class="font-display text-3xl md:text-4xl font-bold text-white">Institutional Recognition</h1>
-            <p class="text-sm mt-2" style="color:rgba(255,255,255,0.5);">Official approvals and affiliations that
-                validate our commitment to legal education.</p>
+            <h1 class="font-[Outfit] text-3xl md:text-4xl font-bold text-white">IQAC</h1>
+            <p class="text-sm mt-2" style="color:rgba(255,255,255,0.5);">Internal Quality Assurance Cell Information and Reports.</p>
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main class="bg-white py-20">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="border-l-4 pl-8 mb-16" style="border-color:#00BF8E;">
-                <h2 class="font-display text-xl font-bold mb-3" style="color:#1a365d;">Bar Council of India (BCI)</h2>
-                <p class="text-gray-500 leading-relaxed text-sm max-w-2xl">The <span class="font-semibold"
-                        style="color:#1a365d;">Bar Council of India</span> is a statutory body established under Section
-                    4 of the Advocates Act, 1961. It is the premier regulatory body for legal education and the legal
-                    profession in India. Recognition from BCI is mandatory for any institution to award a law degree
-                    that entitles graduates to practice in Indian courts.</p>
-            </div>
-            <div class="border-t border-slate-100 mb-16"></div>
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-                <div>
-                    <p class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#00BF8E;">Official
-                        Document</p>
-                    <h3 class="font-display text-lg font-bold" style="color:#1a365d;">BCI Approval Letter</h3>
-                    <p class="text-gray-400 text-sm mt-1">BCI D 1388/2023 — MCT College of Legal Studies, Kerala</p>
-                </div>
-                <a href="assets/images/BCI%20D%201388%202023%20MCT%20College%20of%20legal%20studies%20Kerala_0001.pdf"
-                    download="BCI-Approval-MCT.pdf"
-                    class="inline-flex items-center gap-2 border border-slate-200 text-gray-600 px-6 py-3 rounded-lg font-semibold text-sm hover:border-[#00BF8E] hover:text-[#00BF8E] transition-all flex-shrink-0">
-                    <i class="fas fa-download text-xs"></i> Download PDF
-                </a>
+    <!-- ── IQAC CONTENT ──────────────────────────────────────── -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-8">
+
+                <!-- Sidebar Navigation -->
+                <aside class="lg:w-72 flex-shrink-0">
+                    <div class="sticky top-28">
+                        <nav class="flex flex-col gap-1 max-h-[70vh] overflow-y-auto stylish-scrollbar pr-2">
+                            <button onclick="switchTab('iqac-cell', this)" class="sidebar-link active w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all flex items-center gap-3">
+                                <i class="fas fa-university text-xs w-4"></i> IQAC Cell
+                            </button>
+                            <button onclick="switchTab('aqar', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-file-alt text-xs w-4"></i> AQAR
+                            </button>
+                            <button onclick="switchTab('committee', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-users text-xs w-4"></i> Committee
+                            </button>
+                            <button onclick="switchTab('atr', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-clipboard-list text-xs w-4"></i> Action Taken Report
+                            </button>
+                            <button onclick="switchTab('minutes', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-tasks text-xs w-4"></i> Minutes and ATR
+                            </button>
+                            <button onclick="switchTab('ssr', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-file-signature text-xs w-4"></i> SSR Document
+                            </button>
+                            <button onclick="switchTab('iiqa', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-certificate text-xs w-4"></i> IIQA
+                            </button>
+                            <button onclick="switchTab('naac', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-award text-xs w-4"></i> NAAC Accreditation
+                            </button>
+                            <button onclick="switchTab('feedback', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-comments text-xs w-4"></i> Feedback
+                            </button>
+                            <button onclick="switchTab('files-naac', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-folder-open text-xs w-4"></i> Files for NAAC
+                            </button>
+                            <button onclick="switchTab('functions', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-bullseye text-xs w-4"></i> Functions and Objectives
+                            </button>
+                            <button onclick="switchTab('declaration', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-file-contract text-xs w-4"></i> Mandatory Declaration
+                            </button>
+                            <button onclick="switchTab('annual', this)" class="sidebar-link w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-700 hover:bg-gray-100 flex items-center gap-3">
+                                <i class="fas fa-chart-line text-xs w-4"></i> Annual Report
+                            </button>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Content Area -->
+                <main class="lg:w-3/4 min-h-[400px]">
+
+                    <!-- 1. IQAC Cell -->
+                    <div id="iqac-cell" class="tab-content active">
+                        <h2 class="font-[Outfit] text-2xl font-bold text-[#1a365d] mb-6">Internal Quality Assurance Cell</h2>
+                        <ul class="space-y-4 mb-10 pl-1">
+                            <li class="flex items-start gap-4 text-[15px] text-gray-700 leading-relaxed">
+                                <i class="fas fa-check-circle text-[#00BF8E] mt-1 flex-shrink-0"></i>
+                                <span>MCT College of Legal Studies is a Self Financing College Affiliated to the University of Calicut and managed by the Muslim Cultural Trust, Malappuram.</span>
+                            </li>
+                            <li class="flex items-start gap-4 text-[15px] text-gray-700 leading-relaxed">
+                                <i class="fas fa-check-circle text-[#00BF8E] mt-1 flex-shrink-0"></i>
+                                <span>Muslim Cultural Trust (MCT) was founded in the year 1991 with the objectives of offering much needed good education facilities to cater to the needs of the youth belonging to the Educationally & Socially Backward Classes of the District.</span>
+                            </li>
+                            <li class="flex items-start gap-4 text-[15px] text-gray-700 leading-relaxed">
+                                <i class="fas fa-check-circle text-[#00BF8E] mt-1 flex-shrink-0"></i>
+                                <span>The College was established in the year 2015.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Empty Tab Shells (Content stripped off) -->
+                    <div id="aqar" class="tab-content"></div>
+                    <div id="committee" class="tab-content"></div>
+                    <div id="atr" class="tab-content"></div>
+                    <div id="minutes" class="tab-content"></div>
+                    <div id="ssr" class="tab-content"></div>
+                    <div id="iiqa" class="tab-content"></div>
+                    <div id="naac" class="tab-content"></div>
+                    <div id="feedback" class="tab-content"></div>
+                    <div id="files-naac" class="tab-content"></div>
+                    <div id="functions" class="tab-content"></div>
+                    <div id="declaration" class="tab-content"></div>
+                    <div id="annual" class="tab-content"></div>
+
+                </main>
             </div>
         </div>
-    </main>
-
-    <!-- ── FOOTER ──────────────────────────────────────────────── -->
+    </section>
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
     <footer class="bg-[#0f172a] text-slate-400 pt-16">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 pb-12">
