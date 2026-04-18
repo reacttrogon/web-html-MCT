@@ -148,6 +148,34 @@
         revealBatch("footer .grid > div, footer .grid > ul", { y: 24, stagger: 0.1 });
 
         /* ─────────────────────────────────────────────
+           STATISTICS COUNTER ANIMATION
+        ───────────────────────────────────────────── */
+        const counters = document.querySelectorAll(".js-counter");
+        if (counters.length) {
+            counters.forEach((counter) => {
+                const targetValue = parseInt(counter.getAttribute("data-target"));
+
+                ScrollTrigger.create({
+                    trigger: counter,
+                    start: "top 90%",
+                    onEnter: () => {
+                        gsap.to(counter, {
+                            innerText: targetValue,
+                            duration: 2,
+                            snap: { innerText: 1 },
+                            ease: "power2.out",
+                            onUpdate: function () {
+                                // Add commas and '+' suffix during update
+                                const val = parseInt(this.targets()[0].innerText);
+                                this.targets()[0].innerText = val.toLocaleString() + "+";
+                            }
+                        });
+                    },
+                    once: true
+                });
+            });
+        }
+        /* ─────────────────────────────────────────────
            IMAGE & DIVIDER SPECIFIC REVEALS
         ───────────────────────────────────────────── */
         const images = document.querySelectorAll("main img, section img");
