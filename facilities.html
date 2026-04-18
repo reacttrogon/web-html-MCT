@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="https://mctlawcollege.org/images/mct-favicon.png">
-    <title>Committees & Cells · M.C.T COLLEGE OF LEGAL STUDIES</title>
+    <title>Facilities · M.C.T COLLEGE OF LEGAL STUDIES</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -14,7 +14,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <script>
@@ -34,21 +33,6 @@
             }
         }
     </script>
-    <style>
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .tab-link.active {
-            background-color: #00BF8E;
-            color: white;
-            border-color: #00BF8E;
-        }
-    </style>
 </head>
 
 <body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
@@ -84,8 +68,7 @@
                 <a href="index.html" class="flex-shrink-0">
                     <img src="https://mctlawcollege.org/images/logo-new.png" class="h-16 w-auto" alt="MCT Logo">
                 </a>
-                <button id="menuToggle" class="lg:hidden p-2 text-[#00BF8E] focus:outline-none"
-                    aria-label="Toggle navigation">
+                <button id="menuToggle" class="lg:hidden p-2 text-[#00BF8E] focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
 
@@ -99,7 +82,6 @@
                     <li><a href="academics.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Academics</a>
                     </li>
-
                     <li class="relative group">
                         <a href="institution.html"
                             class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
@@ -115,10 +97,9 @@
                             </div>
                         </div>
                     </li>
-                    <!-- Committee dropdown (Committe Active) -->
                     <li class="relative group">
                         <a href="committees.html"
-                            class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
+                            class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
                             Committee/Cell <i class="fas fa-chevron-down text-[9px]"></i>
                         </a>
                         <div
@@ -149,7 +130,7 @@
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Faculties</a>
                     </li>
                     <li><a href="facilities.html"
-                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Facilities</a>
+                            class="block px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Facilities</a>
                     </li>
                     <li><a href="gallery.html"
                             class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Gallery</a>
@@ -162,118 +143,81 @@
         </nav>
     </header>
 
-    <!-- ── PAGE HERO ─────────────────────────────────────────── -->
+    <!-- ── PAGE HERO ────────────────────────────────────────── -->
     <div style="background-color:#1a365d;" class="py-14">
         <div class="max-w-6xl mx-auto px-6">
-            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#00BF8E;">Statutory Compliance
-            </p>
-            <h1 class="font-display text-3xl md:text-4xl font-bold text-white">Committees &amp; Cells</h1>
-            <p class="text-sm mt-2" style="color:rgba(255,255,255,0.5);">Statutory bodies ensuring rights, safety and
-                welfare of every student and staff.</p>
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#00BF8E;">Our Campus</p>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-white">College Facilities</h1>
+            <p class="text-sm mt-2" style="color:rgba(255,255,255,0.5);">Modern infrastructure and resources designed to
+                support academic excellence and student well-being.</p>
         </div>
     </div>
 
-    <!-- ── COMMITTEES CONTENT ────────────────────────────────── -->
-    <main class="bg-white py-12">
+    <!-- ── FACILITIES CONTENT ── -->
+    <main class="bg-white py-16">
         <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-            <!-- Committees grid — 3 columns -->
-            <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-100 border border-slate-100 rounded-xl overflow-hidden mb-px">
-
-                <!-- 1. Grievance -->
-                <div id="grievance" class="bg-white p-6 flex flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-balance-scale text-xs" style="color:#00BF8E;"></i>
-                        <span class="text-xs font-semibold uppercase tracking-widest"
-                            style="color:#00BF8E;">Grievance</span>
+                <!-- Facility 1: Computer Lab -->
+                <div class="group">
+                    <div
+                        class="relative aspect-video overflow-hidden rounded-2xl mb-6 shadow-xl border border-slate-100">
+                        <img src="https://mctlawcollege.org/images/facilities/fac1.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            alt="Computer Lab">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-5">
+                            <span
+                                class="bg-[#00BF8E] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Technology</span>
+                        </div>
                     </div>
-                    <h2 class="font-display text-base font-bold leading-snug" style="color:#1a365d;">Students Grievance
-                        Redressal Committee</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed flex-grow">A dedicated platform for students to
-                        voice concerns and receive fair, transparent resolutions for academic or administrative issues.
-                    </p>
-                    <a href="contact.html"
-                        class="inline-flex items-center gap-1.5 text-xs font-semibold mt-1 hover:gap-2.5 transition-all"
-                        style="color:#00BF8E;">Contact <i class="fas fa-arrow-right text-[10px]"></i></a>
+                    <h3 class="font-display text-xl font-bold text-[#1a365d] mb-3">Computer Lab</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Internet and Desktops are provided for the all
+                        round development and to enrich the research skills of the students. Various online journals
+                        have been subscribed to and the students are making use of this facility.</p>
                 </div>
 
-                <!-- 2. ICC -->
-                <div id="icc" class="bg-white p-6 flex flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-user-shield text-xs" style="color:#00BF8E;"></i>
-                        <span class="text-xs font-semibold uppercase tracking-widest" style="color:#00BF8E;">ICC</span>
+                <!-- Facility 2: Library -->
+                <div class="group">
+                    <div
+                        class="relative aspect-video overflow-hidden rounded-2xl mb-6 shadow-xl border border-slate-100">
+                        <img src="https://mctlawcollege.org/images/facilities/fac2.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            alt="Library">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-5">
+                            <span
+                                class="bg-[#00BF8E] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Resources</span>
+                        </div>
                     </div>
-                    <h2 class="font-display text-base font-bold leading-snug" style="color:#1a365d;">Internal Complaint
-                        Committee (ICC)</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed flex-grow">The ICC upholds the safety and dignity of
-                        everyone on campus through strict adherence to prevention and redressal norms.</p>
-                    <a href="contact.html"
-                        class="inline-flex items-center gap-1.5 text-xs font-semibold mt-1 hover:gap-2.5 transition-all"
-                        style="color:#00BF8E;">File a Concern <i class="fas fa-arrow-right text-[10px]"></i></a>
+                    <h3 class="font-display text-xl font-bold text-[#1a365d] mb-3">Library</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Sufficient numbers of books are provided in the
+                        library along with a wide range of reference books. Apart from the academic books in order to
+                        nurture the reading skills of students literature books comprising both fiction and non-fiction
+                        have been provided in both Malayalam and English.</p>
                 </div>
 
-                <!-- 3. Anti-Ragging -->
-                <div id="anti-ragging" class="bg-white p-6 flex flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-shield-alt text-xs" style="color:#00BF8E;"></i>
-                        <span class="text-xs font-semibold uppercase tracking-widest"
-                            style="color:#00BF8E;">Anti-Ragging</span>
+                <!-- Facility 3: Canteen -->
+                <div class="group">
+                    <div
+                        class="relative aspect-video overflow-hidden rounded-2xl mb-6 shadow-xl border border-slate-100">
+                        <img src="https://mctlawcollege.org/images/facilities/canteen.jpeg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            alt="Canteen">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-5">
+                            <span
+                                class="bg-[#00BF8E] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Dining</span>
+                        </div>
                     </div>
-                    <h2 class="font-display text-base font-bold leading-snug" style="color:#1a365d;">Anti-Ragging
-                        Committee</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed flex-grow">Enforcing strict zero-tolerance policies
-                        against ragging with continuous monitoring and strict discipline for new joiners.</p>
-                    <a href="contact.html"
-                        class="inline-flex items-center gap-1.5 text-xs font-semibold mt-1 hover:gap-2.5 transition-all"
-                        style="color:#00BF8E;">Reporting Portal <i class="fas fa-arrow-right text-[10px]"></i></a>
-                </div>
-
-            </div>
-
-            <!-- Cells grid — 2 columns -->
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-px bg-slate-100 border border-slate-100 rounded-xl overflow-hidden">
-
-                <!-- 4. OBC Cell -->
-                <div id="obc" class="bg-white p-6 flex flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                        <i class="far fa-file-alt text-xs" style="color:#00BF8E;"></i>
-                        <span class="text-xs font-semibold uppercase tracking-widest" style="color:#00BF8E;">OBC
-                            Cell</span>
-                    </div>
-                    <h2 class="font-display text-base font-bold leading-snug" style="color:#1a365d;">OBC Cell</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed flex-grow">Providing institutional support, welfare
-                        schemes, and academic guidance for students from Other Backward Classes to ensure equity.</p>
-                    <a href="https://mctlawcollege.org/images/OBC%20CELL.PDF" download="OBC-Cell-MCT.pdf"
-                        class="inline-flex items-center gap-2 border border-slate-200 text-gray-500 px-4 py-2 rounded-lg font-semibold text-xs mt-1 hover:border-[#00BF8E] hover:text-[#00BF8E] transition-all w-fit">
-                        <i class="fas fa-download text-[10px]"></i> Download PDF
-                    </a>
-                </div>
-
-                <!-- 5. Minority Cell -->
-                <div id="minority" class="bg-white p-6 flex flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                        <i class="far fa-file-alt text-xs" style="color:#00BF8E;"></i>
-                        <span class="text-xs font-semibold uppercase tracking-widest" style="color:#00BF8E;">Minority
-                            Cell</span>
-                    </div>
-                    <h2 class="font-display text-base font-bold leading-snug" style="color:#1a365d;">Minority Cell</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed flex-grow">Empowering students from minority
-                        communities through scholarship access, skill-development workshops, and addressing
-                        developmental needs.</p>
-                    <a href="https://mctlawcollege.org/images/MINORITY%20CELL.pdf" download="Minority-Cell-MCT.pdf"
-                        class="inline-flex items-center gap-2 border border-slate-200 text-gray-500 px-4 py-2 rounded-lg font-semibold text-xs mt-1 hover:border-[#00BF8E] hover:text-[#00BF8E] transition-all w-fit">
-                        <i class="fas fa-download text-[10px]"></i> Download PDF
-                    </a>
+                    <h3 class="font-display text-xl font-bold text-[#1a365d] mb-3">Canteen</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">A full fledged canteen is working inside the
+                        campus providing lunch and refreshments to the students.</p>
                 </div>
 
             </div>
-
         </div>
     </main>
-
-
 
     <!-- ── FOOTER ──────────────────────────────────────────────── -->
     <footer class="bg-[#0f172a] text-slate-400 pt-16">
@@ -345,19 +289,16 @@
                         class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">
                         Contact</h5>
                     <ul class="space-y-3.5">
-                        <li class="flex items-start gap-3 text-sm text-slate-500">
-                            <i class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i>
-                            <span>Melmuri, Malappuram,<br>Kerala 676517, India</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-sm text-slate-500">
-                            <i class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i>
-                            <a href="tel:+917994647474" class="hover:text-white">+91 7994647474</a>
-                        </li>
-                        <li class="flex items-start gap-3 text-sm text-slate-500">
-                            <i class="fas fa-envelope text-[#00BF8E] mt-0.5 w-4"></i>
-                            <a href="mailto:principalmctcls@gmail.com"
-                                class="hover:text-white">principalmctcls@gmail.com</a>
-                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-500"><i
+                                class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i><span>Melmuri,
+                                Malappuram,<br>Kerala 676517, India</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-500"><i
+                                class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i><a href="tel:+917994647474"
+                                class="hover:text-white">+91 7994647474</a></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-500"><i
+                                class="fas fa-envelope text-[#00BF8E] mt-0.5 w-4"></i><a
+                                href="mailto:principalmctcls@gmail.com"
+                                class="hover:text-white">principalmctcls@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
