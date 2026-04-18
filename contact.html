@@ -17,15 +17,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <style type="text/tailwindcss">
-        @theme {
-            --color-primary: #00BF8E;
-            --color-primary-dark: #00A77D;
-            --color-navy: #1a365d;
-            --font-display: 'Outfit', sans-serif;
-            --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF8E',
+                        'primary-dark': '#00A77D',
+                        navy: '#1a365d',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
         }
-    </style>
+    </script>
 </head>
 
 <body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
@@ -168,7 +176,7 @@
                         <div>
                             <p class="text-[11px] text-gray-600 uppercase tracking-wider font-semibold mb-1">Address</p>
                             <span class="text-sm text-[#1a365d] font-medium leading-relaxed">MCT College of Legal
-                                Studies,<br>Melmuri, Malappuram, Kerala — 676517</span>
+                                Studies,<br>Melmuri, Malappuram, Kerala 676517</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 mb-7">
@@ -253,8 +261,8 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.8!2d76.07!3d11.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMelmuri%2C%20Malappuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000"
-                    width="100%" height="400" style="border:0" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31322.945397725274!2d76.0765674!3d11.0859138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b9988b4b8cf%3A0xcf9eb9702cd6a0be!2sMCT%20COLLEGE%20OF%20LEGAL%20STUDIES!5e0!3m2!1sen!2sin!4v1776473664718!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -336,7 +344,7 @@
                     <ul class="space-y-3.5">
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i>
-                            <span>Melmuri, Malappuram,<br>Kerala — 676517, India</span>
+                            <span>Melmuri, Malappuram,<br>Kerala 676517, India</span>
                         </li>
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i>

@@ -17,13 +17,29 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF8E',
+                        'primary-dark': '#00A77D',
+                        navy: '#1a365d',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <style type="text/tailwindcss">
-        @theme {
+        :root {
             --color-primary: #00BF8E;
             --color-primary-dark: #00A77D;
             --color-navy: #1a365d;
-            --font-display: 'Outfit', sans-serif;
-            --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
         }
 
         .tab-content {
@@ -274,13 +290,25 @@
                     <div id="programmes" class="tab-content">
                         <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">Legal Education at MCT CLS</h2>
                         <div class="space-y-5 text-[15px] leading-loose text-gray-700">
-                            <p>It gives me immense pleasure to welcome new students, parents and family members to our prestigious institution MCT College of Legal Studies. I am highly thankful to them for endowing such high confidence on our institution. As the proverb states, "well begun is half done," you have taken that first step in making law your career.</p>
-                            <p>The prime object of legal education is the production of professional lawyers, judicial officers, academicians, and legal officers for various multinational companies. At MCT CLS, we aim to inculcate students with both substantive and procedural legal rules.</p>
+                            <p>It gives me immense pleasure to welcome new students, parents and family members to our
+                                prestigious institution MCT College of Legal Studies. I am highly thankful to them for
+                                endowing such high confidence on our institution. As the proverb states, "well begun is
+                                half done," you have taken that first step in making law your career.</p>
+                            <p>The prime object of legal education is the production of professional lawyers, judicial
+                                officers, academicians, and legal officers for various multinational companies. At MCT
+                                CLS, we aim to inculcate students with both substantive and procedural legal rules.</p>
                             <blockquote class="border-l-4 border-[#00BF8E] pl-5 italic text-gray-500">
-                                "MCT CLS was started in the year 2015 with a noble aim to provide legal education to the downtrodden and needy in and around Kerala, especially North Malabar."
+                                "MCT CLS was started in the year 2015 with a noble aim to provide legal education to the
+                                downtrodden and needy in and around Kerala, especially North Malabar."
                             </blockquote>
-                            <p>Presently, the College offers the <strong>5 Year integrated BBA LL.B (Hons.) Course</strong> and the <strong>3 Year LL.B Course</strong>, each with an intake of 50 students. Modern legal education is a blend of both theory and practice. To achieve this, the college provides clinical legal education and encourages Moot Court competitions and mock trials.</p>
-                            <p>We emphasize both curricular and extra-curricular activities. Our team of dedicated, qualified, and experienced staff strive to provide students with every opportunity to achieve their goals.</p>
+                            <p>Presently, the College offers the <strong>5 Year integrated BBA LL.B (Hons.)
+                                    Course</strong> and the <strong>3 Year LL.B Course</strong>, each with an intake of
+                                50 students. Modern legal education is a blend of both theory and practice. To achieve
+                                this, the college provides clinical legal education and encourages Moot Court
+                                competitions and mock trials.</p>
+                            <p>We emphasize both curricular and extra-curricular activities. Our team of dedicated,
+                                qualified, and experienced staff strive to provide students with every opportunity to
+                                achieve their goals.</p>
                         </div>
                     </div>
 
@@ -288,35 +316,59 @@
                     <div id="finishing" class="tab-content">
                         <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">Finishing School Programme</h2>
                         <div class="space-y-5 text-[15px] leading-loose text-gray-700">
-                            <p>I would like to welcome our professional students and take this opportunity to thank you for showing your interest in our academic and professional programmes in legal studies. Our institution is strongly committed and determined towards academic excellence and professional growth.</p>
-                            <p>From our end, we aim to provide the finest environment possible for teaching and learning. We teach programmes backed by our highly qualified and experienced teachers. This provides the scope to give students the opportunity to achieve their full potential in legal studies.</p>
+                            <p>I would like to welcome our professional students and take this opportunity to thank you
+                                for showing your interest in our academic and professional programmes in legal studies.
+                                Our institution is strongly committed and determined towards academic excellence and
+                                professional growth.</p>
+                            <p>From our end, we aim to provide the finest environment possible for teaching and
+                                learning. We teach programmes backed by our highly qualified and experienced teachers.
+                                This provides the scope to give students the opportunity to achieve their full potential
+                                in legal studies.</p>
                         </div>
                     </div>
 
                     <!-- 4. Students Grievance Tab -->
                     <div id="grievance" class="tab-content">
-                        <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">Students Grievance Redressal</h2>
+                        <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">Students Grievance Redressal
+                        </h2>
                         <div class="space-y-5 text-[15px] leading-loose text-gray-700">
-                            <p>To achieve this vision, the college strives to impact comprehensive legal education by creating an environment in which every student could discover and realize his potential to the fullest extent.</p>
-                            <p>MCT College of Legal Studies is established with the main objective of imparting quality-based professional education to the students coming from all strata of the society and it aims at securing the following goals:</p>
+                            <p>To achieve this vision, the college strives to impact comprehensive legal education by
+                                creating an environment in which every student could discover and realize his potential
+                                to the fullest extent.</p>
+                            <p>MCT College of Legal Studies is established with the main objective of imparting
+                                quality-based professional education to the students coming from all strata of the
+                                society and it aims at securing the following goals:</p>
                             <ul class="space-y-2 list-disc pl-5 text-sm">
-                                <li>To evolve and impart comprehensive legal education at all levels to achieve excellence.</li>
-                                <li>To raise legal awareness in community for a greater social and economic justice.</li>
-                                <li>Combining quality legal education along with necessary input of practical training.</li>
+                                <li>To evolve and impart comprehensive legal education at all levels to achieve
+                                    excellence.</li>
+                                <li>To raise legal awareness in community for a greater social and economic justice.
+                                </li>
+                                <li>Combining quality legal education along with necessary input of practical training.
+                                </li>
                                 <li>To equip students for a variety of legal and law-related career paths.</li>
-                                <li>To inculcate a positive attitude and a sense of true professionalism among the students and make them self-reliant.</li>
+                                <li>To inculcate a positive attitude and a sense of true professionalism among the
+                                    students and make them self-reliant.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- 5. National Seminar Tab -->
                     <div id="seminar" class="tab-content">
-                        <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">National Seminars &amp; Workshops</h2>
+                        <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">National Seminars &amp;
+                            Workshops</h2>
                         <div class="space-y-5 text-[15px] leading-loose text-gray-700">
                             <p class="italic text-[#00BF8E] font-semibold">"Law is an instrument of social change."</p>
-                            <p>In a democratic country like India, the relevancy of legal education is growing day by day. Knowledge of law increases one's understanding of public affairs. Its study promotes accuracy of expression, facility in arguments, and skill in interpreting written words, as well as an understanding of social values.</p>
-                            <p>It is the pivotal duty of everyone to know the law. Ignorance of law is not innocence but a sin which cannot be excused. MCT College of Legal Studies is dedicated to advancing human dignity, social welfare, and justice through knowledge of law.</p>
-                            <p>We aim to impart legal education which not only produces good lawyers but creates cultured, law-abiding citizens inculcated with concepts of human values and human rights. Our graduates can serve humanity in various capacities such as administrators, law teachers, jurists, judges, and industrial entrepreneurs.</p>
+                            <p>In a democratic country like India, the relevancy of legal education is growing day by
+                                day. Knowledge of law increases one's understanding of public affairs. Its study
+                                promotes accuracy of expression, facility in arguments, and skill in interpreting
+                                written words, as well as an understanding of social values.</p>
+                            <p>It is the pivotal duty of everyone to know the law. Ignorance of law is not innocence but
+                                a sin which cannot be excused. MCT College of Legal Studies is dedicated to advancing
+                                human dignity, social welfare, and justice through knowledge of law.</p>
+                            <p>We aim to impart legal education which not only produces good lawyers but creates
+                                cultured, law-abiding citizens inculcated with concepts of human values and human
+                                rights. Our graduates can serve humanity in various capacities such as administrators,
+                                law teachers, jurists, judges, and industrial entrepreneurs.</p>
                         </div>
                     </div>
 
@@ -324,8 +376,12 @@
                     <div id="achievements" class="tab-content">
                         <h2 class="font-display text-2xl font-bold text-[#1a365d] mb-6">Achievements &amp; Goals</h2>
                         <div class="space-y-5 text-[15px] leading-loose text-gray-700">
-                            <p>The College aims to be a premier academic institution in providing quality and affordable legal education. At present, the courses offered by the College are the Five Year integrated BBA-LL.B (Hons) and the Three Year LL.B.</p>
-                            <p>Our students have consistently shown excellence in moot courts, legal aid drives, and academic performance, setting a benchmark for legal studies in the North Malabar region.</p>
+                            <p>The College aims to be a premier academic institution in providing quality and affordable
+                                legal education. At present, the courses offered by the College are the Five Year
+                                integrated BBA-LL.B (Hons) and the Three Year LL.B.</p>
+                            <p>Our students have consistently shown excellence in moot courts, legal aid drives, and
+                                academic performance, setting a benchmark for legal studies in the North Malabar region.
+                            </p>
                         </div>
                     </div>
 
@@ -340,40 +396,76 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 pb-12">
                 <div class="lg:col-span-12 xl:col-span-5">
                     <img src="https://mctlawcollege.org/images/logo-new.png" class="h-14" alt="MCT Logo">
-                    <p class="text-sm leading-relaxed text-slate-500 mt-4 max-w-sm">MCT College of Legal Studies is a premier centre of legal education in South Malabar, committed to quality and affordable legal education.</p>
+                    <p class="text-sm leading-relaxed text-slate-500 mt-4 max-w-sm">MCT College of Legal Studies is a
+                        premier centre of legal education in South Malabar, committed to quality and affordable legal
+                        education.</p>
                     <div class="flex gap-2.5 mt-6">
-                        <a href="#" class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i class="fab fa-youtube"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-sm hover:bg-[#00BF8E] hover:text-white transition-all"><i
+                                class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="lg:col-span-4 xl:col-span-2">
-                    <h5 class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">Quick Links</h5>
+                    <h5
+                        class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">
+                        Quick Links</h5>
                     <ul class="space-y-2.5">
-                        <li><a href="about.html" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>About</a></li>
-                        <li><a href="courses.html" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Courses</a></li>
-                        <li><a href="facilities.php" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Facilities</a></li>
-                        <li><a href="gallery.php" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Gallery</a></li>
-                        <li><a href="contact.html" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Contact</a></li>
+                        <li><a href="about.html"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>About</a></li>
+                        <li><a href="courses.html"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Courses</a></li>
+                        <li><a href="facilities.php"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Facilities</a></li>
+                        <li><a href="gallery.php"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Gallery</a></li>
+                        <li><a href="contact.html"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Contact</a></li>
                     </ul>
                 </div>
                 <div class="lg:col-span-4 xl:col-span-2">
-                    <h5 class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">Academics</h5>
+                    <h5
+                        class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">
+                        Academics</h5>
                     <ul class="space-y-2.5">
-                        <li><a href="academics.html" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Academics</a></li>
-                        <li><a href="iqac.php" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>IQAC</a></li>
-                        <li><a href="news.php" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>News &amp; Events</a></li>
-                        <li><a href="moot_court.php" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Moot Court</a></li>
-                        <li><a href="faculities.html" class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span class="text-[#00BF8E] font-semibold">›</span>Faculties</a></li>
+                        <li><a href="academics.html"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Academics</a></li>
+                        <li><a href="iqac.php"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>IQAC</a></li>
+                        <li><a href="news.php"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>News &amp; Events</a></li>
+                        <li><a href="moot_court.php"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Moot Court</a></li>
+                        <li><a href="faculities.html"
+                                class="text-sm text-slate-500 hover:text-white flex items-center gap-2 hover:pl-1 transition-all"><span
+                                    class="text-[#00BF8E] font-semibold">›</span>Faculties</a></li>
                     </ul>
                 </div>
                 <div class="lg:col-span-4 xl:col-span-3">
-                    <h5 class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">Contact</h5>
+                    <h5
+                        class="text-white font-semibold text-xs uppercase tracking-widest mb-5 pb-3 border-b border-white/10">
+                        Contact</h5>
                     <ul class="space-y-3.5">
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i>
-                            <span>Melmuri, Malappuram,<br>Kerala — 676517, India</span>
+                            <span>Melmuri, Malappuram,<br>Kerala 676517, India</span>
                         </li>
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i>
@@ -381,7 +473,8 @@
                         </li>
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-envelope text-[#00BF8E] mt-0.5 w-4"></i>
-                            <a href="mailto:principalmctcls@gmail.com" class="hover:text-white">principalmctcls@gmail.com</a>
+                            <a href="mailto:principalmctcls@gmail.com"
+                                class="hover:text-white">principalmctcls@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -389,7 +482,8 @@
         </div>
         <div class="border-t border-white/5 py-6">
             <div class="max-w-7xl mx-auto px-6 text-center">
-                <p class="text-xs text-slate-600">Copyrights &copy; 2026 M.C.T College of Legal Studies. All Rights Reserved.</p>
+                <p class="text-xs text-slate-600">Copyrights &copy; 2026 M.C.T College of Legal Studies. All Rights
+                    Reserved.</p>
             </div>
         </div>
     </footer>

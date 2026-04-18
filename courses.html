@@ -17,15 +17,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <style type="text/tailwindcss">
-        @theme {
-            --color-primary: #00BF8E;
-            --color-primary-dark: #00A77D;
-            --color-navy: #1a365d;
-            --font-display: 'Outfit', sans-serif;
-            --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF8E',
+                        'primary-dark': '#00A77D',
+                        navy: '#1a365d',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
         }
-    </style>
+    </script>
 </head>
 
 <body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
@@ -317,7 +325,7 @@
                     <ul class="space-y-3.5">
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i>
-                            <span>Melmuri, Malappuram,<br>Kerala — 676517, India</span>
+                            <span>Melmuri, Malappuram,<br>Kerala 676517, India</span>
                         </li>
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i>

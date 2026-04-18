@@ -23,15 +23,23 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-    <style type="text/tailwindcss">
-        @theme {
-            --color-primary: #00BF8E;
-            --color-primary-dark: #00A77D;
-            --color-navy: #1a365d;
-            --font-display: 'Outfit', sans-serif;
-            --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF8E',
+                        'primary-dark': '#00A77D',
+                        navy: '#1a365d',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
         }
-    </style>
+    </script>
 </head>
 
 <body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
@@ -631,7 +639,7 @@
                         <div>
                             <p class="text-[11px] text-gray-600 uppercase tracking-wider font-semibold mb-1">Address</p>
                             <span class="text-sm text-[#1a365d] font-medium leading-relaxed">MCT College of Legal
-                                Studies,<br>Melmuri, Malappuram, Kerala — 676517</span>
+                                Studies,<br>Melmuri, Malappuram, Kerala 676517</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 mb-7">
@@ -760,7 +768,7 @@
                     <ul class="space-y-3.5">
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-map-marker-alt text-[#00BF8E] mt-0.5 w-4"></i>
-                            <span>Melmuri, Malappuram,<br>Kerala — 676517, India</span>
+                            <span>Melmuri, Malappuram,<br>Kerala 676517, India</span>
                         </li>
                         <li class="flex items-start gap-3 text-sm text-slate-500">
                             <i class="fas fa-phone text-[#00BF8E] mt-0.5 w-4"></i>
