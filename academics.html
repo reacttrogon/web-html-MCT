@@ -501,8 +501,21 @@
             document.getElementById(tabId).classList.add('active');
             el.classList.add('active');
             el.classList.remove('text-gray-700', 'hover:bg-gray-100');
+
+            // RECALCULATE SCROLL BOUNDARIES
+            // Since the DOM height just changed dramatically, Lenis & GSAP must be informed
+            setTimeout(() => {
+                if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+                if (window.lenis) window.lenis.resize();
+            }, 50);
+
             if (window.innerWidth < 1024) {
-                document.getElementById(tabId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Use Lenis strictly to avoid native scroll conflicts
+                if (window.lenis) {
+                    window.lenis.scrollTo(document.getElementById(tabId), { offset: -100, duration: 1 });
+                } else {
+                    document.getElementById(tabId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         }
 
@@ -520,6 +533,15 @@
         });
     </script>
 
+
+    <!-- ── GSAP + ScrollTrigger + Lenis ── -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <!-- Smooth scroll (Lenis) -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- GSAP animations -->
+    <script src="js/animations.js"></script>
 </body>
 
 </html>
