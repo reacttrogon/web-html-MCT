@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://mctlawcollege.org/images/mct-favicon.png">
+    <title>Faculties · M.C.T COLLEGE OF LEGAL STUDIES</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF8E',
+                        'primary-dark': '#00A77D',
+                        navy: '#1a365d',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-600 bg-slate-50 antialiased overflow-x-hidden">
+
+    <header class="sticky top-0 z-[100]">
+        <!-- Top bar -->
+        <div class="bg-[#00BF8E] text-white py-2">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="mailto:principalmctcls@gmail.com"
+                        class="text-sm font-medium flex items-center gap-2 hover:text-yellow-200 transition-colors">
+                        <i class="fas fa-envelope"></i>principalmctcls@gmail.com
+                    </a>
+                    <a href="tel:+917994647474"
+                        class="text-sm font-medium flex items-center gap-2 hover:text-yellow-200 transition-colors">
+                        <i class="fas fa-phone"></i>+91 7994647474
+                    </a>
+                </div>
+                <div class="flex items-center gap-6 ml-auto">
+                    <a href="contact.html"
+                        class="text-xs font-semibold uppercase tracking-wider hover:text-yellow-200 transition-colors">Admission</a>
+                    <a href="#"
+                        class="text-xs font-semibold uppercase tracking-wider hover:text-yellow-200 transition-colors">Career</a>
+                    <a href="#"
+                        class="text-xs font-semibold uppercase tracking-wider hover:text-yellow-200 transition-colors">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main navbar -->
+        <nav class="bg-white border-b border-gray-200 shadow-lg">
+            <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="https://mctlawcollege.org/images/logo-new.png" class="h-16 w-auto" alt="MCT Logo">
+                </a>
+                <button id="menuToggle" class="lg:hidden p-2 text-[#00BF8E] focus:outline-none"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <ul id="navbarNav" class="hidden lg:flex items-center list-none m-0 p-0">
+                    <li><a href="index.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] whitespace-nowrap">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">About</a>
+                    </li>
+                    <li><a href="academics.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Academics</a>
+                    </li>
+
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
+                            Institution <i class="fas fa-chevron-down text-[9px]"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 bg-white shadow-2xl border border-gray-100 w-64 py-2 rounded-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                            <a href="institution.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#00BF8E]/10 hover:text-[#00BF8E] transition-colors">Institutional
+                                Recognition</a>
+                            <a href="iqac.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#00BF8E]/10 hover:text-[#00BF8E] transition-colors">IQAC</a>
+                            <a href="https://mctlawcollege.org/images/BCI%20D%201388%202023%20MCT%20College%20of%20legal%20studies%20Kerala_0001.pdf"
+                                download="BCI-Approval-MCT.pdf"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#00BF8E]/10 hover:text-[#00BF8E] transition-colors">BCI
+                                Approval (PDF)</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">
+                            Committee/Cell <i class="fas fa-chevron-down text-[9px]"></i>
+                        </button>
+                        <div
+                            class="absolute top-full -left-24 mt-2 bg-white shadow-2xl border border-gray-100 w-80 py-2 rounded-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                            <a href="committees.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#00BF8E]/10 hover:text-[#00BF8E] transition-colors">Committees
+                                & Cells</a>
+                        </div>
+                    </li>
+                    <li><a href="courses.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Courses</a>
+                    </li>
+                    <li><a href="faculities.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Faculties</a>
+                    </li>
+                    <li><a href="gallery.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Gallery</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block px-3 py-2 text-xs font-semibold text-[#1a365d] hover:text-[#00BF8E] uppercase tracking-wide font-[Outfit] transition-colors whitespace-nowrap">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ── FACULTY HERO ────────────────────────────────────────── -->
+    <div class="bg-gray-100 py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="font-display text-4xl md:text-5xl font-bold text-navy mb-4 tracking-tight">Our Distinguished
+                Faculty</h1>
+            <p class="text-slate-500 max-w-xl mx-auto text-lg">Academicians and legal experts dedicated to nurturing the
+                next generation of legal professionals.</p>
+        </div>
+    </div>
+
+    <!-- ── FACULTY GRID ────────────────────────────────────────── -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+
+                <!-- Faculty 1 -->
+                <div class="group">
+                    <div
+                        class="relative overflow-hidden rounded-[2rem] bg-slate-100 aspect-[4/5] mb-6 shadow-xl transition-all duration-500 group-hover:shadow-primary/20">
+                        <img src="faculty_member_law_professor_1776475225134.png"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Faculty Name">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-navy/90 to-transparent translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="flex gap-4 text-white/80">
+                                <i class="fab fa-linkedin hover:text-primary cursor-pointer"></i>
+                                <i class="fas fa-envelope hover:text-primary cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-display font-bold text-navy text-xl mb-1">Dr. Sreenivasulu N.S</h3>
+                    <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Principal</p>
+                    <p class="text-xs text-slate-400 leading-relaxed line-clamp-2">Expert in Intellectual Property
+                        Rights and Constitutional Law.</p>
+                </div>
+
+                <!-- Template Faculty Card 2 -->
+                <div class="group">
+                    <div
+                        class="relative overflow-hidden rounded-[2rem] bg-slate-100 aspect-[4/5] mb-6 shadow-xl grayscale-0 group-hover:grayscale-0 transition-all duration-500">
+                        <div class="w-full h-full flex items-center justify-center bg-slate-200">
+                            <i class="fas fa-user-tie text-4xl text-slate-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-display font-bold text-navy text-xl mb-1">Prof. Meera K.</h3>
+                    <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Senior Professor</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Specializing in Criminal Law and Evidence.</p>
+                </div>
+
+                <!-- Repeat as needed -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-slate-100 aspect-[4/5] mb-6 shadow-xl">
+                        <div class="w-full h-full flex items-center justify-center bg-slate-200">
+                            <i class="fas fa-user-tie text-4xl text-slate-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-display font-bold text-navy text-xl mb-1">Adv. Rahul Nair</h3>
+                    <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Assistant Professor</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Legal Practice and Procedure Specialist.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ──────────────────────────────────────────────── -->
+    <footer class="bg-navy py-12 text-center text-white/40 text-xs">
+        Copyrights &copy; 2026 M.C.T College of Legal Studies
+    </footer>
+</body>
+
+</html>
